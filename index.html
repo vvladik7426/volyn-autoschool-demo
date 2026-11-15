@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>[ДЕМО] Концепт сайту — Волинська приватна автошкола</title>
+  <meta name="description" content="Неофіційний демонстраційний концепт сайту Волинської приватної автошколи: категорії A, B, C, E, контраварійне та екстремальне водіння, дистанційний курс теорії.">
+  <!-- Демо-концепт: не індексувати -->
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  <meta property="og:title" content="[ДЕМО] Концепт сайту — Волинська приватна автошкола">
+  <meta property="og:description" content="Неофіційний демонстраційний концепт. Офіційна сторінка: facebook.com/volynprivatavtoschool">
+  <meta name="theme-color" content="#fbf8f4">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='32' fill='%23fff'/%3E%3Cpath d='M10 42c0-5 3-8 8-9h28c5 1 8 4 8 9v6H10z M16 33c3-10 8-14 16-14s13 4 16 14' fill='none' stroke='%23e30613' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- ============ DEMO DISCLAIMER ============ -->
+  <div class="demo" role="note" aria-label="Попередження про демонстраційний сайт">
+    <div class="wrap demo__in">
+      <span class="demo__tag">Демо-концепт</span>
+      <p><b>Це не офіційний сайт автошколи.</b> Неофіційний концепт, створений лише для демонстрації.
+        <span class="demo__more">Логотип, фото й тексти взято з публічної сторінки автошколи у Facebook; усі права належать їхнім власникам. Форма запису нікуди не надсилає дані.</span></p>
+      <a href="https://www.facebook.com/volynprivatavtoschool" target="_blank" rel="noopener">Офіційна сторінка →</a>
+    </div>
+  </div>
+
+  <!-- ============ HEADER ============ -->
+  <header class="hdr" id="top">
+    <div class="wrap hdr__in">
+      <a href="#top" class="brand" aria-label="Волинська приватна автошкола">
+        <svg class="brand__car" viewBox="0 0 240 120" aria-hidden="true"><use href="#car"/></svg>
+        <span class="brand__txt"><small>волинська приватна</small><b>АВТОШКОЛА</b></span>
+      </a>
+      <nav class="menu" aria-label="Меню">
+        <a href="#services">Послуги</a>
+        <a href="#online">Теорія онлайн</a>
+        <a href="#quiz">Тест ПДР</a>
+        <a href="#reviews">Відгуки</a>
+        <a href="#contacts">Контакти</a>
+      </nav>
+      <a class="hdr__tel" href="tel:+380990744254"><span class="pulse"></span>(099) 074-42-54</a>
+      <button class="burger" aria-label="Меню" aria-expanded="false"><i></i><i></i><i></i></button>
+    </div>
+  </header>
+  <div class="drawer" aria-hidden="true">
+    <a href="#services">Послуги</a><a href="#online">Теорія онлайн</a><a href="#quiz">Тест ПДР</a><a href="#booking">Запис</a><a href="#reviews">Відгуки</a><a href="#contacts">Контакти</a>
+    <div class="drawer__tels"><a href="tel:+380990744254">(099) 074-42-54</a><a href="tel:+380677028430">(067) 702-84-30</a></div>
+  </div>
+
+  <!-- SVG sprite: line-art car (front view) -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <g id="car" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+        <path class="c-body" pathLength="1" d="M20 100c-2-14 4-22 16-26 30-6 138-6 168 0 12 4 18 12 16 26v10h-24v-8H44v8H20z"/>
+        <path class="c-roof" pathLength="1" d="M46 74c8-30 26-44 54-48 14-2 26-2 40 0 28 4 46 18 54 48"/>
+        <path class="c-glass" pathLength="1" d="M60 72c8-22 22-32 44-34 11-1 21-1 32 0 22 2 36 12 44 34"/>
+        <path class="c-mirror" pathLength="1" d="M44 66c-8-6-18-6-22 0 2 5 10 7 20 6M196 66c8-6 18-6 22 0-2 5-10 7-20 6"/>
+        <path class="c-grill" pathLength="1" d="M92 94h56"/>
+      </g>
+      <g id="lights">
+        <path d="M30 82l42 5-5 7-34-3z"/>
+        <path d="M210 82l-42 5 5 7 34-3z"/>
+      </g>
+    </defs>
+  </svg>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="wrap hero__grid">
+        <div class="hero__txt">
+          <p class="note fade">привіт, майбутній водію 👋</p>
+          <h1 class="hero__h"><span class="blur-in">Права —</span> <span class="blur-in">без стресу,</span> <em class="blur-in">у&nbsp;своєму темпі</em></h1>
+          <p class="hero__p fade" style="--d:.6s">Категорії <b>A, B, C, E</b>, контраварійне та екстремальне водіння. Теорію можна пройти дистанційно — коли і де тобі зручно.</p>
+          <div class="hero__btns fade" style="--d:.75s">
+            <a href="#booking" class="b b--red"><span>Записатися</span><svg viewBox="0 0 24 24"><path d="M4 12h15m-6-6 6 6-6 6"/></svg></a>
+            <a href="tel:+380990744254" class="b b--line"><span>Зателефонувати</span></a>
+          </div>
+        </div>
+
+        <div class="hero__art">
+          <div class="beam beam--l"></div><div class="beam beam--r"></div>
+          <svg class="hero__car" viewBox="0 0 240 120" aria-label="Контурний малюнок автомобіля">
+            <use href="#car"/>
+            <use href="#lights" class="lights"/>
+          </svg>
+          <svg class="hero__road" viewBox="0 0 600 40" preserveAspectRatio="none" aria-hidden="true"><path pathLength="1" d="M0 30 Q 150 6 300 22 T 600 14"/></svg>
+
+          <a href="#online" class="ticket" aria-label="Акція: дистанційний курс теорії за 2000 гривень">
+            <span class="ticket__stamp"><svg viewBox="0 0 100 100"><defs><path id="circ" d="M50 50m-38 0a38 38 0 1 1 76 0a38 38 0 1 1-76 0"/></defs><text><textPath href="#circ">АКЦІЯ · ОБМЕЖЕНА В ЧАСІ · АКЦІЯ · </textPath></text></svg><b>%</b></span>
+            <small>Дистанційний курс теорії</small>
+            <strong>2000 <span>грн</span></strong>
+            <i>деталі →</i>
+          </a>
+        </div>
+      </div>
+      <div class="scroll-hint" aria-hidden="true"><span></span></div>
+    </section>
+
+    <!-- ============ SERVICES ============ -->
+    <section class="sec" id="services">
+      <div class="wrap">
+        <header class="sec__h">
+          <p class="note reveal">чого навчаємо</p>
+          <h2 class="h reveal">Послуги <span class="scribble">автошколи<svg viewBox="0 0 300 20" preserveAspectRatio="none"><path pathLength="1" d="M4 14 C 80 4, 160 18, 296 6"/></svg></span></h2>
+          <p class="lead reveal">Наведи або торкнись картки, щоб перевернути.</p>
+        </header>
+
+        <div class="signs">
+          <button class="sign reveal" style="--d:0s" data-svc="Категорія A" aria-label="Категорія A">
+            <span class="sign__face sign__front"><span class="plate plate--circle">A</span><span class="sign__name">Мотоцикли</span></span>
+            <span class="sign__face sign__back"><b>Категорія A</b><span>Мотоцикли та інші двоколісні транспортні засоби.</span><em>Записатися →</em></span>
+          </button>
+          <button class="sign reveal" style="--d:.08s" data-svc="Категорія B" aria-label="Категорія B">
+            <span class="sign__face sign__front"><span class="plate plate--tri">B</span><span class="sign__name">Легкові авто</span></span>
+            <span class="sign__face sign__back"><b>Категорія B</b><span>Легкові автомобілі — найпопулярніший вибір для першого посвідчення.</span><em>Записатися →</em></span>
+          </button>
+          <button class="sign reveal" style="--d:.16s" data-svc="Категорія C" aria-label="Категорія C">
+            <span class="sign__face sign__front"><span class="plate plate--sq">C</span><span class="sign__name">Вантажні авто</span></span>
+            <span class="sign__face sign__back"><b>Категорія C</b><span>Вантажні автомобілі для роботи й професійного розвитку.</span><em>Записатися →</em></span>
+          </button>
+          <button class="sign reveal" style="--d:.24s" data-svc="Категорія E" aria-label="Категорія E">
+            <span class="sign__face sign__front"><span class="plate plate--dia">E</span><span class="sign__name">Причепи</span></span>
+            <span class="sign__face sign__back"><b>Категорія E</b><span>Керування складом транспортних засобів із причепом.</span><em>Записатися →</em></span>
+          </button>
+        </div>
+
+        <div class="extra">
+          <article class="xcard reveal" data-svc="Контраварійне водіння">
+            <div class="xcard__art" aria-hidden="true">
+              <svg viewBox="0 0 300 140"><path id="sk1" class="skid" pathLength="1" d="M10 120 C 90 120, 120 30, 200 40 S 290 90, 290 90"/>
+                <g class="xcar"><animateMotion dur="4s" repeatCount="indefinite" keyPoints="0;1;0" keyTimes="0;.5;1" calcMode="spline" keySplines=".45 0 .2 1;.45 0 .2 1"><mpath href="#sk1"/></animateMotion>
+                  <g><animateTransform attributeName="transform" type="rotate" values="-6;8;-4;6;-6" dur="4s" repeatCount="indefinite"/><svg x="-42" y="-21" width="84" height="42" viewBox="0 0 240 120" overflow="visible"><use href="#car"/></svg></g></g></svg>
+            </div>
+            <div>
+              <p class="note">коли щось пішло не так</p>
+              <h3>Контраварійне водіння</h3>
+              <p>Навчимо правильно діяти в складних і непередбачуваних ситуаціях на дорозі — щоб ти зберігав контроль над авто.</p>
+              <button class="b b--line b--sm" data-pick="Контраварійне водіння"><span>Записатися</span></button>
+            </div>
+          </article>
+          <article class="xcard xcard--dark reveal" style="--d:.1s" data-svc="Екстремальне водіння">
+            <div class="xcard__art" aria-hidden="true">
+              <svg viewBox="0 0 300 140"><path id="sk2" class="skid" pathLength="1" d="M20 70 C 60 10, 140 10, 150 70 S 240 130, 280 70 S 200 10, 150 70"/>
+                <g class="xcar"><animateMotion dur="5s" repeatCount="indefinite" keyPoints="0;1;0" keyTimes="0;.5;1" calcMode="spline" keySplines=".45 0 .2 1;.45 0 .2 1"><mpath href="#sk2"/></animateMotion>
+                  <g><animateTransform attributeName="transform" type="rotate" values="0;24;-22;14;-10;0" dur="5s" repeatCount="indefinite"/><svg x="-42" y="-21" width="84" height="42" viewBox="0 0 240 120" overflow="visible"><use href="#car"/></svg></g></g></svg>
+            </div>
+            <div>
+              <p class="note">для тих, хто хоче більше</p>
+              <h3>Екстремальне водіння</h3>
+              <p>Поглиблені навички керування автомобілем на межі його можливостей — на закритому майданчику під контролем інструктора.</p>
+              <button class="b b--white b--sm" data-pick="Екстремальне водіння"><span>Записатися</span></button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ONLINE COURSE (horizontal pinned) ============ -->
+    <section class="online" id="online">
+      <div class="online__pin">
+        <div class="wrap online__head">
+          <div>
+            <p class="note">економ не тільки гроші, а й час ⌛</p>
+            <h2 class="h">Дистанційний курс теорії</h2>
+          </div>
+          <div class="price">
+            <small>за акційною ціною*</small>
+            <b data-count="2000">0</b><span>грн</span>
+          </div>
+        </div>
+        <div class="hscroll">
+          <div class="hscroll__track">
+            <article class="hcard"><span class="hcard__n">01</span><h3>Вільний графік</h3><p>Відеолекції — слухай, коли і де тобі зручно. Не потрібно відвідувати аудиторії.</p><div class="hcard__ico">🕑</div></article>
+            <article class="hcard"><span class="hcard__n">02</span><h3>Зручний темп</h3><p>Жодного групового графіка. Проходь максимально швидко — або розтягуй задоволення.</p><div class="hcard__ico">🎚️</div></article>
+            <article class="hcard"><span class="hcard__n">03</span><h3>Економія</h3><p>Пропозиція, яка добряче збереже твій бюджет.</p><div class="hcard__ico">💸</div></article>
+            <article class="hcard hcard--red"><span class="hcard__n">04</span><h3>20 тем + тести</h3><p>Проміжний тест наприкінці кожної лекції для закріплення знань. Тільки актуальні ПДР — нічого зайвого.</p><div class="hcard__ico">🤓</div></article>
+            <article class="hcard hcard--cta">
+              <h3>Цікавить?</h3>
+              <p>Пропозиція обмежена в часі.</p>
+              <button class="b b--red" data-pick="Дистанційний курс теорії"><span>Хочу на курс</span></button>
+            </article>
+          </div>
+        </div>
+        <p class="wrap online__foot">*Ціна з акційної публікації автошколи; пропозиція обмежена в часі — актуальну вартість уточнюйте за телефоном.</p>
+      </div>
+    </section>
+
+    <!-- ============ QUIZ ============ -->
+    <section class="sec" id="quiz">
+      <div class="wrap quiz">
+        <div class="quiz__intro">
+          <p class="note reveal">а ну перевір себе</p>
+          <h2 class="h reveal">Міні-тест <span class="scribble">з ПДР<svg viewBox="0 0 300 20" preserveAspectRatio="none"><path pathLength="1" d="M4 10 C 90 18, 200 2, 296 12"/></svg></span></h2>
+          <p class="lead reveal">Три питання — як на справжньому іспиті. У курсі таких тестів після кожної з 20 тем.</p>
+          <div class="quiz__score reveal" aria-live="polite"><b id="qScore">0</b>/<span id="qTotal">3</span> правильних</div>
+        </div>
+        <div class="qcard reveal" id="qCard">
+          <div class="qcard__bar"><span id="qBar"></span></div>
+          <div class="qcard__body" id="qBody"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ BEFORE / AFTER ============ -->
+    <section class="sec sec--paper">
+      <div class="wrap ba">
+        <div class="ba__txt">
+          <p class="note reveal">правила змінились (трохи 😅)</p>
+          <h2 class="h reveal">Від «Drive to right» до сучасного автодрому</h2>
+          <p class="lead reveal">Потягни повзунок. Ми вчимо тільки за актуальними правилами — і відпрацьовуємо навички на майданчику з розміткою, конусами та знаками.</p>
+        </div>
+        <div class="ba__box reveal" id="ba" style="--pos:50%">
+          <img src="img/autodrom-2.webp" alt="Навчальні автомобілі автошколи на автодромі" loading="lazy">
+          <div class="ba__old"><img src="img/vintage.png" alt="Архівне фото регулювання руху на початку XX століття" loading="lazy"></div>
+          <div class="ba__handle" aria-hidden="true"><span>⇆</span></div>
+          <input class="ba__range" type="range" min="0" max="100" value="50" aria-label="Порівняти старе і нове фото">
+          <span class="ba__lbl ba__lbl--l">тоді</span><span class="ba__lbl ba__lbl--r">зараз</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ AUTODROM PHOTO ============ -->
+    <section class="photo-band">
+      <div class="photo-band__img" style="background-image:url('img/autodrom-1.webp')" role="img" aria-label="Учень на автодромі між конусами"></div>
+      <div class="wrap photo-band__cap">
+        <p class="note">тут усе починається</p>
+        <h2 class="h h--white">Практика на автодромі</h2>
+      </div>
+    </section>
+
+    <!-- ============ HOW ============ -->
+    <section class="sec">
+      <div class="wrap">
+        <header class="sec__h">
+          <p class="note reveal">просто як 1-2-3</p>
+          <h2 class="h reveal">Як почати</h2>
+        </header>
+        <ol class="how">
+          <li class="reveal" style="--d:0s"><span>1</span><h3>Залиш заявку</h3><p>На сайті, у Facebook direct або за телефоном.</p></li>
+          <li class="reveal" style="--d:.1s"><span>2</span><h3>Обери формат</h3><p>Категорію, дистанційну теорію або додатковий курс водіння.</p></li>
+          <li class="reveal" style="--d:.2s"><span>3</span><h3>Сідай за кермо</h3><p>Теорія у своєму темпі, практика з інструктором на автодромі.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ BOOKING ============ -->
+    <section class="sec sec--paper" id="booking">
+      <div class="wrap book">
+        <div class="book__txt">
+          <p class="note reveal">займе 30 секунд</p>
+          <h2 class="h reveal">Запис на навчання</h2>
+          <p class="lead reveal">Обери, що тебе цікавить, і залиш номер — автошкола зв'яжеться зручним для тебе способом.</p>
+          <div class="book__tels reveal">
+            <a href="tel:+380990744254">(099) 074-42-54</a>
+            <a href="tel:+380677028430">(067) 702-84-30</a>
+          </div>
+        </div>
+
+        <form class="form reveal" id="form" novalidate>
+          <p class="form__demo">🧪 Демо-режим: дані нікуди не надсилаються і не зберігаються.</p>
+          <fieldset>
+            <legend>Що тебе цікавить? <small>(можна кілька)</small></legend>
+            <div class="chips" id="chips">
+              <label><input type="checkbox" name="svc" value="Категорія A"><span>A</span></label>
+              <label><input type="checkbox" name="svc" value="Категорія B"><span>B</span></label>
+              <label><input type="checkbox" name="svc" value="Категорія C"><span>C</span></label>
+              <label><input type="checkbox" name="svc" value="Категорія E"><span>E</span></label>
+              <label class="wide"><input type="checkbox" name="svc" value="Дистанційний курс теорії"><span>Теорія онлайн</span></label>
+              <label class="wide"><input type="checkbox" name="svc" value="Контраварійне водіння"><span>Контраварійне</span></label>
+              <label class="wide"><input type="checkbox" name="svc" value="Екстремальне водіння"><span>Екстремальне</span></label>
+            </div>
+          </fieldset>
+          <div class="row">
+            <label class="fld"><span>Ім'я</span><input name="name" autocomplete="name" required minlength="2" maxlength="80" placeholder="Як до тебе звертатися?"></label>
+            <label class="fld"><span>Телефон</span><input name="phone" type="tel" inputmode="tel" autocomplete="tel" required placeholder="+380 __ ___ __ __"></label>
+          </div>
+          <fieldset>
+            <legend>Як зв'язатися?</legend>
+            <div class="radios">
+              <label><input type="radio" name="via" value="Дзвінок" checked><span>📞 Дзвінок</span></label>
+              <label><input type="radio" name="via" value="Telegram"><span>✈️ Telegram</span></label>
+              <label><input type="radio" name="via" value="Viber"><span>💬 Viber</span></label>
+            </div>
+          </fieldset>
+          <label class="hp" aria-hidden="true">Не заповнюйте <input name="website" tabindex="-1" autocomplete="off"></label>
+          <label class="agree"><input type="checkbox" name="agree"><span>Погоджуюсь на обробку персональних даних для зв'язку щодо навчання</span></label>
+          <p class="form__err" aria-live="assertive"></p>
+          <button class="b b--red b--wide form__go" type="submit">
+            <span>Надіслати заявку</span>
+            <svg class="form__car" viewBox="0 0 240 120" aria-hidden="true"><use href="#car"/></svg>
+          </button>
+          <div class="form__ok" hidden>
+            <svg class="okcar" viewBox="0 0 240 120" aria-hidden="true"><use href="#car"/><use href="#lights" class="lights"/></svg>
+            <h3>Заявку записано!</h3>
+            <p id="okText"></p>
+            <button type="button" class="b b--line b--sm" id="again"><span>Ще одна заявка</span></button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- ============ REVIEWS ============ -->
+    <section class="sec" id="reviews">
+      <div class="wrap">
+        <header class="sec__h sec__h--row">
+          <div>
+            <p class="note reveal">з Google Maps</p>
+            <h2 class="h reveal">Відгуки учнів</h2>
+          </div>
+          <div class="gbadge reveal" id="gBadge">
+            <svg viewBox="0 0 48 48" width="34" height="34" aria-hidden="true"><path fill="#FFC107" d="M43.6 20.5H42V20H24v8h11.3C33.7 32.7 29.2 36 24 36c-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.8 1.2 7.9 3l5.7-5.7C34 6.1 29.3 4 24 4 12.9 4 4 12.9 4 24s8.9 20 20 20 20-8.9 20-20c0-1.3-.1-2.6-.4-3.5z"/><path fill="#FF3D00" d="m6.3 14.7 6.6 4.8C14.7 15.1 19 12 24 12c3.1 0 5.8 1.2 7.9 3l5.7-5.7C34 6.1 29.3 4 24 4 16.3 4 9.7 8.3 6.3 14.7z"/><path fill="#4CAF50" d="M24 44c5.2 0 9.9-2 13.4-5.2l-6.2-5.2C29.2 35.1 26.7 36 24 36c-5.2 0-9.6-3.3-11.3-8l-6.5 5C9.5 39.6 16.2 44 24 44z"/><path fill="#1976D2" d="M43.6 20.5H42V20H24v8h11.3c-.8 2.2-2.2 4.2-4.1 5.6l6.2 5.2C37 39.2 44 34 44 24c0-1.3-.1-2.6-.4-3.5z"/></svg>
+            <div><b id="gRate">Google Maps</b><small id="gCount">рейтинг і відгуки — автоматично</small></div>
+          </div>
+        </header>
+        <div class="revs" id="revs">
+          <!-- Демо: реальних відгуків ще немає — показуємо, як працюватиме блок -->
+          <article class="rev rev--ghost reveal"><div class="sk sk--ava"></div><div class="sk sk--l"></div><div class="sk"></div><div class="sk"></div><div class="sk sk--s"></div></article>
+          <article class="rev rev--ghost reveal" style="--d:.1s"><div class="sk sk--ava"></div><div class="sk sk--l"></div><div class="sk"></div><div class="sk sk--s"></div></article>
+          <article class="rev rev--ghost reveal" style="--d:.2s"><div class="sk sk--ava"></div><div class="sk sk--l"></div><div class="sk"></div><div class="sk"></div><div class="sk sk--s"></div></article>
+        </div>
+        <p class="revs__note reveal" id="revNote">У робочій версії тут автоматично з'являться <b>реальні відгуки та рейтинг</b> з Google Maps автошколи — без ручного оновлення. У демо ми їх не вигадуємо 🙂</p>
+      </div>
+    </section>
+
+    <!-- ============ CONTACTS ============ -->
+    <section class="sec sec--paper" id="contacts">
+      <div class="wrap contacts">
+        <div>
+          <p class="note reveal">на зв'язку</p>
+          <h2 class="h reveal">Контакти</h2>
+          <div class="tels">
+            <a class="tel reveal" href="tel:+380990744254"><small>Телефон</small>(099) 074-42-54</a>
+            <a class="tel reveal" style="--d:.1s" href="tel:+380677028430"><small>Телефон</small>(067) 702-84-30</a>
+          </div>
+          <div class="soc reveal">
+            <a href="https://www.facebook.com/volynprivatavtoschool" target="_blank" rel="noopener" class="b b--line"><span>Facebook · написати в direct</span></a>
+          </div>
+        </div>
+        <figure class="banner reveal">
+          <img src="img/logo-banner.png" alt="Банер автошколи з логотипом і телефонами" loading="lazy">
+        </figure>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="wrap">
+      <div class="foot__brand">
+        <svg viewBox="0 0 240 120" aria-hidden="true"><use href="#car"/></svg>
+        <span><small>волинська приватна</small><b>АВТОШКОЛА</b></span>
+      </div>
+      <p class="foot__disc">Неофіційний демонстраційний концепт сайту. Не є офіційним сайтом автошколи і не пов'язаний з нею.
+        Логотип, фотографії та тексти взято з публічної сторінки автошколи у
+        <a href="https://www.facebook.com/volynprivatavtoschool" target="_blank" rel="noopener">Facebook</a> виключно для демонстрації;
+        усі права на них належать їхнім власникам. Архівне фото використано як ілюстрацію. Сайт не збирає й не передає персональні дані.</p>
+      <p class="foot__small">Демо-концепт · <span id="yr"></span></p>
+    </div>
+  </footer>
+
+  <a href="#booking" class="sticky-cta"><span>Записатися</span></a>
+  <canvas class="fx" aria-hidden="true"></canvas>
+
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
